@@ -1,4 +1,6 @@
-module.exports = {
+import {ConnectionOptions} from 'typeorm';
+
+const config: ConnectionOptions = {
   type: 'mysql',
   host: 'localhost',
   port: 3306,
@@ -8,13 +10,15 @@ module.exports = {
   synchronize: true,
   logging: false,
   entities: [
-    "src/entity/**/*.ts"
+    "dist/entity/**/*.js"
   ],
   migrations: [
-    "migrations/**/*.ts"
+    "dist/migrations/**/*.js"
   ],
   cli: {
     entitiesDir: 'src/entity',
-    migrationsDir: 'migration',
+    migrationsDir: 'src/migration',
   },
 }
+
+export = config;
