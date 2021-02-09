@@ -1,0 +1,6 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": { "module": "commonjs" }
+}
+
+// https://github.com/typeorm/typeorm/issues/5087#issuecomment-557385885
