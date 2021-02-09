@@ -5,7 +5,7 @@ import * as ormconfig from './config/ormconfig';
 
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { User } from './entity/User';
+import { User } from './entity/user';
 
 export function DatabaseOrmModule(): DynamicModule {
   return TypeOrmModule.forRoot(ormconfig);

@@ -14,6 +14,9 @@ export class User {
   @Column()
   age: number;
 
+  @Column()
+  section: string;
+
   @Column({ default: true })
   isActive: boolean;
 }
