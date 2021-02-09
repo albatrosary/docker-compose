@@ -25,3 +25,4 @@ jobs:
         run: docker-compose up -d
       - name: Check running containers
         run: docker ps
+    steps:
