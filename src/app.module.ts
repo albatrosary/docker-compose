@@ -8,6 +8,7 @@ import { AppService } from './app.service';
 import { User } from './entity/user';
 
 export function DatabaseOrmModule(): DynamicModule {
+  console.log('process.env.NODE_ENV', process.env.NODE_ENV);
   return TypeOrmModule.forRoot(ormconfig);
 }
 
